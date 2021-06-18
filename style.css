@@ -1,0 +1,60 @@
+/*--student name:Xiaoqi Chai
+	student ID:20101650 */
+/* this file is used to set the style for admin.html and booking.html*/
+body {
+	
+	background-color:MintCream;
+	
+	}
+
+div.container {
+    margin: 0 auto;
+    width: 80%;
+    border: 5px solid ;
+	float: CENTER;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+	padding: 20px;
+}
+
+div.containerText{
+	text-align: center;
+	margin: 18px;
+}
+form{
+	
+	margin: auto;
+	float:center;
+}
+
+h1 {
+	
+	font-size: 24px;
+}
+
+
+
+
+label {
+	display: table-cell;
+	text-align: left;
+	
+}
+
+input {
+	border-radius: 4px;
+	display: table-cell; 
+	margin: 5px;
+}
+
+div.bodyText{
+	text-align: center;
+	margin: 20px;
+}
+
+table, th, td {
+	margin: 0 auto;
+	float: CENTER;
+    border: 1px solid black;
+}

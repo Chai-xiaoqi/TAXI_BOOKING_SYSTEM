@@ -1,0 +1,14 @@
+CREATE TABLE booking (
+booking_number INT(40) PRIMARY KEY AUTO_INCREMENT, 
+customer_name VARCHAR(80) NOT NULL,
+phone_number VARCHAR(12) NOT NULL,
+unit_number VARCHAR(40),
+street_number VARCHAR(40) NOT NULL,
+street_name VARCHAR(255) NOT NULL,
+suburb VARCHAR(80),
+destination_suburb VARCHAR(80),
+pickup_date VARCHAR(50) NOT NULL,
+pickup_time VARCHAR(50) NOT NULL,
+generated_booking_date VARCHAR(50),
+generated_booking_time VARCHAR(50),
+status VARCHAR(40));

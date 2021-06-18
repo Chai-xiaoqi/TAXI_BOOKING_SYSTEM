@@ -1,0 +1,40 @@
+<!--student name:Xiaoqi Chai
+	student ID:20101650 -->
+<!--this file is the html page, it allows user to input their taxi booking info-->
+
+<!DOCTYPE html>
+<HTML XMLns="http://www.w3.org/1999/xHTML"> 
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="style.css">
+		<title>Booking Page</title>
+		<script type="text/javascript" src="xhr.js"></script>
+		<script type="text/javascript" src="booking_ajax.js"> </script>  	
+		<script type="text/javascript" src="show_time.js"> </script>
+	</head>
+	<body onload="getDate();getTime();">
+	<div class="container">
+		<h1>Cabsonline: Taxi Booking System</h1>
+		<form class="bookform">
+	    <label>Customer Name:  <input type="text" name="cname"> </label></br>
+ 	    <label>Phone Number: <input type="text" name="phone" ></label></br>
+		<label>Unit Number: <input type="text" name="unumber"></label></br>
+		<label>Street Number: <input type="text" name="snumber"></label></br>
+		<label>Street Name: <input type="text" name="stname" ></label></br>
+		<label>Suburb: <input type="text" name="sbname"></label></br>
+		<label>Destination Suburb: <input type="text" name="dsname"></label></br>
+		<label>Pick-Up Date: <input type="text" name="date" id="showDate" ></label></br>
+		<label>Pick-Up Time: <input type="text" name="time" id="showTime"></label></br>
+	    <input name="submit" type = "button" onClick = "getData('bookingprocess.php','targetDiv', cname.value, phone.value,unumber.value,snumber.value,stname.value,sbname.value,dsname.value,date.value,time.value) " value = "Submit">
+		<input name="reset" type="reset" value="Reset">
+		</form>
+		<br>
+		<br>
+		<div id="targetDiv"> 
+		<p name="reference">  </p>
+		</div> 
+	
+	</div>
+		
+	</body>
+</html> 
